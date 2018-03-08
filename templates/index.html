@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Counter</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='../css/style.css')}}">
+</head>
+<body>
+	<h1>Counter</h1>
+	<p>{{session['counter']}}</p>
+	<form action="/plus_two">
+		<input type="submit" name="plus_two" value="Plus_Two">
+	</form>
+	<form action="/reset">
+		<input type="submit" name="reset" value="Reset">
+	</form>
+</body>
+</html>
